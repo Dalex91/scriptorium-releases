@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<title>Instalare · Scriptorium</title>
+<meta name="description" content="Cum instalezi Scriptorium pe Linux, Windows și macOS.">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="index.html"><img src="emblem.svg" width="34" height="34" alt="">Scriptorium</a>
+  <nav class="links">
+    <a href="index.html">Acasă</a>
+    <a href="instalare.html" aria-current="page">Instalare</a>
+    <a href="privacy.html">Confidențialitate</a>
+  </nav>
+</header>
+<h1>Cum instalezi Scriptorium</h1>
+<p>Scriptorium e un singur fișier de descărcat. Nu trebuie să instalezi nimic altceva: fonturile, dicționarele și programul care face PDF-urile sunt deja înăuntru.</p>
+<p>Toate versiunile sunt aici: <strong><a href="https://github.com/Dalex91/scriptorium-releases/releases/latest">github.com/Dalex91/scriptorium-releases/releases</a></strong></p>
+<h2>Ubuntu (și Debian, Linux Mint, Pop!_OS)</h2>
+<ol>
+<li>Descarcă fișierul care se termină în <strong><code>_amd64.deb</code></strong>.</li>
+<li>Dă dublu-clic pe el. Se deschide <strong>App Center</strong> (sau „Instalare software”).</li>
+<li>Apasă <strong>Instalează</strong> și scrie parola calculatorului când ți-o cere.</li>
+<li>Scriptorium apare în lista de aplicații, cu iconița cu lumânarea. Îl poți fixa în bară cu clic-dreapta → „Fixează în bară”.</li>
+</ol>
+<p>Dacă dublu-clicul deschide arhiva în loc de App Center: clic-dreapta pe fișier → „Deschide cu” → „Instalare aplicații”.</p>
+<h2>Orice alt Linux (AppImage)</h2>
+<ol>
+<li>Descarcă fișierul care se termină în <strong><code>.AppImage</code></strong>.</li>
+<li>Clic-dreapta pe el → <strong>Proprietăți</strong> → <strong>Permisiuni</strong> → bifează „Permite executarea ca program”.</li>
+<li>Dublu-clic pe el și pornește.</li>
+</ol>
+<p>Pe Ubuntu 22.04 și mai noi, dacă nu pornește, instalează o dată <code>libfuse2</code>: <code>sudo apt install libfuse2</code>. Varianta <code>.deb</code> nu are nevoie de asta.</p>
+<h2>Windows 10 și 11</h2>
+<ol>
+<li>Descarcă fișierul care se termină în <strong><code>_x64-setup.exe</code></strong>.</li>
+<li>Dă dublu-clic. Dacă Windows spune „Windows a protejat computerul”, apasă <strong>Mai multe informații</strong> → <strong>Rulează oricum</strong> (aplicația nu are încă semnătură Microsoft).</li>
+<li>Urmează pașii. La final, Scriptorium e în meniul Start.</li>
+</ol>
+<h2>macOS</h2>
+<ol>
+<li>Descarcă fișierul <code>.dmg</code>: <strong><code>_aarch64.dmg</code></strong> pentru Mac cu Apple M1/M2/M3/M4, <strong><code>_x64.dmg</code></strong> pentru Mac cu Intel (în meniul  → „Despre acest Mac” scrie ce procesor ai).</li>
+<li>Deschide-l și trage Scriptorium în folderul <strong>Aplicații</strong>.</li>
+<li>Prima dată: clic-dreapta pe Scriptorium → <strong>Deschide</strong> → <strong>Deschide</strong> (aplicația nu are încă semnătură Apple).</li>
+</ol>
+<h2>Prima pornire</h2>
+<img class="shot" src="install/1-pornire.png" alt="Prima pornire" loading="lazy">
+<ul>
+<li><strong>Prima dată în viața ta?</strong> Apasă <strong>Intră</strong> și alege-ți numele, tema și limba.</li>
+<li><strong>Ai mai scris în Scriptorium pe alt calculator?</strong> Apasă <strong>„Am mai folosit Scriptorium · restaurează din Google Drive”</strong>.</li>
+</ul>
+<img class="shot" src="install/2-restaurare.png" alt="Restaurare din Google Drive" loading="lazy">
+<p>Apasă <strong>Conectează Google Drive</strong>. Se deschide browserul. Alege contul tău Google și apasă <strong>Continuă</strong>. Scriptorium vede doar folderul lui din Drive, nu și restul fișierelor tale. Te întorci în aplicație și îți alegi cărțile: ele revin cu tot cu note, istoric și preferințe (numele, tema, limba).</p>
+<h2>Fără internet sau fără Google Drive</h2>
+<p>În <strong>Setări</strong>, la <strong>„O copie a întregii biblioteci”</strong>:</p>
+<ul>
+<li><strong>Salvează toată biblioteca într-un fișier…</strong> face un singur fișier <code>.scriptorium</code> cu toate cărțile. Îl poți pune pe un stick sau trimite pe e-mail.</li>
+<li><strong>Adu cărți dintr-un fișier…</strong> aduce cărțile pe calculatorul nou. Poți și să dai dublu-clic pe fișierul <code>.scriptorium</code>, iar Scriptorium te întreabă dacă le aduce.</li>
+</ul>
+<p>Nu se pierde nimic: dacă o carte există deja și e diferită, varianta ta rămâne, iar cealaltă e pusă deoparte în folderul <code>conflicts</code>.</p>
+<img class="shot" src="install/3-copie-biblioteca.png" alt="Copia bibliotecii, în Setări" loading="lazy">
+<h2>Actualizări</h2>
+<p>Când apare o versiune nouă, Scriptorium îți spune discret în bibliotecă: <strong>„E disponibilă o versiune nouă · Actualizează”</strong>. Apeși, aștepți câteva secunde și aplicația repornește. Poți și să apeși <strong>Mai târziu</strong>. Nu te întrerupe niciodată în timp ce scrii.</p>
+<p>Pe Ubuntu, la varianta <code>.deb</code>, actualizarea îți cere o dată parola calculatorului, ca orice instalare.</p>
+<h2>Dezinstalare</h2>
+<p>Dezinstalarea șterge doar aplicația. <strong>Cărțile rămân</strong> în folderul lor (de obicei <code>Documente/Scriptorium</code>) și în Google Drive.</p>
+<ul>
+<li>Ubuntu: App Center → Instalate → Scriptorium → Dezinstalează (sau <code>sudo apt remove scriptorium</code>).</li>
+<li>Windows: Setări → Aplicații → Scriptorium → Dezinstalare.</li>
+<li>macOS: trage Scriptorium din Aplicații la Coș.</li>
+</ul>
+<footer>Scriptorium · o cameră pentru scris. Întrebări sau probleme: <a href="https://github.com/Dalex91/scriptorium-releases/issues">github.com/Dalex91/scriptorium-releases/issues</a></footer>
+</div>
+</body>
+</html>
